@@ -1,33 +1,9 @@
-version: 2.1
-
-jobs:
-  deploy:
-    docker:
-      - image: cimg/base:stable
-    steps:
-      - checkout
-      - run:
-          name: Install lftp
-          command: sudo apt-get update && sudo apt-get install -y lftp
-      - run:
+- run:
           name: Deploy to staging
           command: |
             lftp -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" -e "
               set ftp:ssl-protect-data true
               set ssl:verify-certificate no
-              cd /home/ctwebdevelopment/staging.ctwebdevelopment.com
-              pwd
-              ls -la
-              !echo 'test file from circleci' > /tmp/testfile.txt
-              put /tmp/testfile.txt
-              ls -la
+              mirror -R --verbose --exclude .git/ --exclude .circleci/ ./site staging.ctwebdevelopment.com
               quit
             "
-
-workflows:
-  deploy-workflow:
-    jobs:
-      - deploy:
-          filters:
-            branches:
-              only: main
