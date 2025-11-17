@@ -1,0 +1,27 @@
+version: 2.1
+
+jobs:
+  deploy:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - run:
+          name: Install lftp
+          command: sudo apt-get update && sudo apt-get install -y lftp
+      - run:
+          name: Deploy to staging
+          command: |
+            lftp -u $FTP_USER,$FTP_PASS $FTP_HOST <<EOF
+            set ssl:verify-certificate no
+            mirror -R --verbose --exclude .git/ --exclude .circleci/ ./site /home/ctwebdevelopment/staging.ctwebdevelopment.com
+            quit
+            EOF
+
+workflows:
+  deploy-workflow:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: main
