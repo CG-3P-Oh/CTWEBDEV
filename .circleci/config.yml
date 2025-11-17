@@ -15,7 +15,7 @@ jobs:
             lftp -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" -e "
               set ftp:ssl-protect-data true
               set ssl:verify-certificate no
-              mirror -R --verbose --exclude .git/ --exclude .circleci/ ./site staging.ctwebdevelopment.com
+              mirror -R --verbose --only-newer --exclude .git/ --exclude .circleci/ ./site staging.ctwebdevelopment.com
               quit
             "
 
