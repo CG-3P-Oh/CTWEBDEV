@@ -12,7 +12,7 @@ jobs:
       - run:
           name: Deploy to staging
           command: |
-            lftp -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" -e "set ssl:verify-certificate no; mirror -R --verbose --exclude .git/ --exclude .circleci/ ./site /home/ctwebdevelopment/staging.ctwebdevelopment.com; quit"
+            lftp -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" -e "set ftp:ssl-protect-data true; set ssl:verify-certificate no; mirror -R --verbose --exclude .git/ --exclude .circleci/ ./site /home/ctwebdevelopment/staging.ctwebdevelopment.com; quit"
 
 workflows:
   deploy-workflow:
