@@ -43,9 +43,9 @@
             <!-- Image (mobile) -->
             <img src="https://www.3-prime.com/wp-content/uploads/2021/12/consulting-4.webp" alt="3PRIME Managed Hosting" class="img-fluid mb-6 d-lg-none">
 
-            <!-- Heading -->Small Business Web Hosting by 3PRIME!!!
+            <!-- Heading -->Small Business Web Hosting by 3PRIME
             <h1 class="display-2 fw-bold">
-              Hosting You Can Trust.<br />Services You Rely On..
+              Hosting You Can Trust.<br />Services You Rely On.
             </h1>
 
             <!-- Text -->
