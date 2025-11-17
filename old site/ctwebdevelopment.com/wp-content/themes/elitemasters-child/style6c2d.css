@@ -1,0 +1,81 @@
+/*
+Theme Name: EliteMasters - Child
+Author: GT3
+Author URI: http://www.gt3themes.com
+Description: -
+Version: 1.0
+Template: elitemasters
+*/
+
+.displaynone, .shop_ordering, .tagged_as {display:none !important;}
+
+.hero-banner {
+    margin-top: -30px !important;
+    margin-bottom: 0px !important;
+    padding-top: 155px !important;
+    padding-bottom: 125px !important;
+    background-image: url(../../uploads/2015/08/ct-website-development-home.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+/*#main_header {margin-bottom: 0px;}*/
+
+.wpb_gallery_heading {text-align:center !important;}
+
+.homepage-blue-partners img {max-height: 70px !important;}
+
+.vc_custom_1509123222924 {
+    background-color: #cccccc !important;
+    border-top: solid 1px #bbb !important;
+    border-bottom: solid 1px #bbb !important;
+}
+.page-id-4603 .vc_custom_1500412744529 {font-size:1.25em;line-height:1.75em;padding: 0px 35px 35px 35px !important;}
+
+.shop_list_details .price span {display: inline-block !important;}
+.yith_ywraq_add_item_browse-list {padding-top:20px;padding-bottom:20px;font-size:1.5em !important;color:#00c5f3 !important;}
+.yith_ywraq_add_item_browse-list a {color:#00c5f3 !important;}
+p a {color:#00c5f3 !important; text-decoration:none;}
+p a:hover {color:#c4c8cf !important; text-decoration:underline;}
+.yith-ywraq-add-button {margin-left:59px;}
+
+.vc_btn3.vc_btn3-color-black, .vc_btn3.vc_btn3-color-black.vc_btn3-style-flat {
+    color: #000 !important;
+    background-color: #c7d4ec !important;
+}
+
+/* breadcrumb */
+.woocommerce-breadcrumb {padding-top: 10px !important;padding-left: 5% !important;}
+
+.woocommerce-breadcrumb a {color:#08c1f3 !important;text-decoration: none;}
+.woocommerce-breadcrumb a:hover {color:#34caf3;text-decoration: underline;}
+
+@media only screen and (max-width: 980px) {
+
+.page-id-4603 .vc_col-sm-6 {width: 100% !important;}
+.page-id-4603 .vc_custom_1500412744529 {margin-top: -115px !important;font-size:1.25em !important;line-height:1.5em !important;}
+}
+
+@media only screen and (max-width: 690px) {
+.hero-banner {
+    margin-top: -30px !important;
+    margin-bottom: 0px !important;
+    padding-top: 155px !important;
+    padding-bottom: 125px !important;
+    background-image: url(../../uploads/2017/11/ct-website-development-mobile-bg.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.vc_carousel-slideline .vc_item {float:none !important;width: 100% !important;height: auto !important;}
+.vc_carousel-slideline {width: auto !important;text-align: center !important;}
+.homebottompics img {margin: 0px 0px 25px 0px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+
+.page-id-4603 .vc_custom_1500412744529 {font-size:1.25em !important;line-height:1.5em;padding: 0px 15px 25px 15px !important;}
+
+}

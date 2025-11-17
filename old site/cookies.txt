@@ -1,0 +1,9 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+ctwebdevelopment.com	TRUE	/	FALSE	1999999999	PHPSESSID	702a59c19e7850a20acfc5522968fd39
+ctwebdevelopment.com	TRUE	/	FALSE	1999999999	wp_woocommerce_session_12c9fbfdd0421fc45922bc131529c908	t_1a4e6b3f21cf329fd7d4f238f18d89%7C1757701886%7C1757615486%7C%24generic%24pw_x_ItVfaNLCen2R-P9MFN463qR77Cj59iJg_Jp
+ctwebdevelopment.com	TRUE	/	FALSE	1999999999	wordpress_test_cookie	WP%20Cookie%20check
+ctwebdevelopment.com	TRUE	/	FALSE	1999999999	woocommerce_items_in_cart	1
+ctwebdevelopment.com	TRUE	/	FALSE	1999999999	woocommerce_cart_hash	3aef560d8472e5d27c2cfa6e25cde327
+ctwebdevelopment.com	TRUE	/	FALSE	1999999999	yith_ywraq_session_12c9fbfdd0421fc45922bc131529c908	2f4ffb13cc99f7fe3ead5d158bfad6e8%7C%7C1757701886%7C%7C1757698286%7C%7Cf5dcf3077b293e61eb3d4cb4200612ca
+
