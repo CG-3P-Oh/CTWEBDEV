@@ -34,7 +34,8 @@
 
             <!-- Heading -->
             <h1 class="display-3 fw-bold text-white mb-3">
-              CT Web Development
+              CT Web Development<br>
+              <span class="fs-2 fw-normal">by 3PRIME</span>
             </h1>
 
             <!-- Subheading -->
