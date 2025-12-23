@@ -45,7 +45,7 @@
 
             <!-- Heading -->Small Business Web Hosting by 3PRIME
             <h1 class="display-2 fw-bold">
-              Hosting You Can Trust.<br />Services You Rely On.
+              Hosting You Can Trust!<br />Services You Rely On.
             </h1>
 
             <!-- Text -->
