@@ -27,7 +27,7 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 
     <!-- HERO SECTION -->
-    <section class="pt-8 pt-md-11 pb-8 pb-md-11 bg-3prime-navy">
+    <section class="pt-8 pt-md-11 pb-8 pb-md-11 bg-3prime-navy hero-3prime">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-10 col-lg-8">

@@ -280,3 +280,39 @@ html {
 .btn-outline-3prime:focus {
   box-shadow: 0 0 0 0.25rem rgba(45, 125, 210, 0.25);
 }
+
+/* Hero section with flipped background image */
+.hero-3prime {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-3prime::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../img/ct-website-development-home.jpg');
+  background-size: cover;
+  background-position: center;
+  transform: scaleX(-1);
+  z-index: 0;
+}
+
+.hero-3prime::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(26, 35, 50, 0.85);
+  z-index: 1;
+}
+
+.hero-3prime > .container {
+  position: relative;
+  z-index: 2;
+}
