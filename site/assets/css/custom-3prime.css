@@ -1,0 +1,282 @@
+/* 3PRIME Custom Colors and Styling */
+/* Inspired by 3-prime.com professional design */
+
+:root {
+  --3prime-navy: #1a2332;
+  --3prime-charcoal: #2d3748;
+  --3prime-blue: #2d7dd2;
+  --3prime-success: #28a745;
+  --3prime-light: #f8f9fa;
+}
+
+/* Dark navy background */
+.bg-3prime-navy {
+  background-color: var(--3prime-navy) !important;
+  color: #ffffff;
+}
+
+.bg-3prime-charcoal {
+  background-color: var(--3prime-charcoal) !important;
+  color: #ffffff;
+}
+
+/* Accent blue for CTAs */
+.btn-3prime {
+  background-color: var(--3prime-blue);
+  border-color: var(--3prime-blue);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.btn-3prime:hover,
+.btn-3prime:focus {
+  background-color: #2567b7;
+  border-color: #2567b7;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(45, 125, 210, 0.3);
+}
+
+.btn-3prime:active {
+  transform: translateY(0);
+}
+
+/* Outline variant */
+.btn-outline-3prime {
+  background-color: transparent;
+  border-color: var(--3prime-blue);
+  color: var(--3prime-blue);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-3prime:hover,
+.btn-outline-3prime:focus {
+  background-color: var(--3prime-blue);
+  border-color: var(--3prime-blue);
+  color: #ffffff;
+}
+
+/* Text color utilities for dark backgrounds */
+.text-white-70 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.text-white-80 {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.text-white-90 {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Border utilities */
+.border-white-20 {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Icon circles with accent colors */
+.icon-circle-3prime {
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(45, 125, 210, 0.1);
+  flex-shrink: 0;
+}
+
+.icon-circle-3prime i {
+  color: var(--3prime-blue);
+  font-size: 24px;
+}
+
+/* Larger icon circle variant */
+.icon-circle-3prime-lg {
+  width: 72px;
+  height: 72px;
+}
+
+.icon-circle-3prime-lg i {
+  font-size: 32px;
+}
+
+/* Icon circle on dark backgrounds */
+.icon-circle-3prime-light {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-circle-3prime-light i {
+  color: #ffffff;
+}
+
+/* Card styling for 3PRIME design */
+.card-3prime {
+  border: none;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.card-3prime:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* High contrast CTA sections */
+.cta-3prime {
+  background: linear-gradient(135deg, var(--3prime-navy) 0%, var(--3prime-charcoal) 100%);
+  color: #ffffff;
+}
+
+/* Navigation styling */
+.navbar-3prime {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e9ecef;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-3prime .navbar-brand {
+  font-weight: 700;
+  color: var(--3prime-navy);
+}
+
+/* Partner logo styling */
+.partner-logo {
+  max-height: 60px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.partner-logo:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+/* Service card feature list */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.feature-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Section heading styles */
+.section-heading {
+  margin-bottom: 1rem;
+}
+
+.section-subheading {
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+/* Dark section text adjustments */
+.bg-3prime-navy .section-subheading,
+.bg-3prime-charcoal .section-subheading {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Feature box styling */
+.feature-box {
+  display: flex;
+  align-items: flex-start;
+}
+
+.feature-box-icon {
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+.feature-box-content h5 {
+  margin-bottom: 0.25rem;
+}
+
+.feature-box-content p {
+  margin-bottom: 0;
+}
+
+/* Footer styling */
+.footer-3prime {
+  background-color: var(--3prime-navy);
+}
+
+.footer-3prime a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-3prime a:hover {
+  color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .icon-circle-3prime {
+    width: 48px;
+    height: 48px;
+  }
+
+  .icon-circle-3prime i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .display-3 {
+    font-size: 2.5rem;
+  }
+
+  .card-3prime .card-body {
+    padding: 1.5rem;
+  }
+}
+
+/* Animation enhancements */
+.lift-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lift-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Badge success subtle for dark backgrounds */
+.bg-3prime-navy .badge-success-subtle,
+.bg-3prime-charcoal .badge-success-subtle {
+  background-color: rgba(40, 167, 69, 0.2) !important;
+}
+
+/* Link styling on dark backgrounds */
+.bg-3prime-navy a:not(.btn),
+.bg-3prime-charcoal a:not(.btn) {
+  color: var(--3prime-blue);
+}
+
+.bg-3prime-navy a:not(.btn):hover,
+.bg-3prime-charcoal a:not(.btn):hover {
+  color: #5a9de0;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus states for accessibility */
+.btn-3prime:focus,
+.btn-outline-3prime:focus {
+  box-shadow: 0 0 0 0.25rem rgba(45, 125, 210, 0.25);
+}
