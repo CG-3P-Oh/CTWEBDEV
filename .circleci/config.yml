@@ -10,6 +10,15 @@ jobs:
           name: Install lftp
           command: sudo apt-get update && sudo apt-get install -y lftp
       - run:
+          name: Restore file timestamps from git
+          command: |
+            cd site
+            git ls-files -z | while IFS= read -r -d '' file; do
+              if [ -f "$file" ]; then
+                touch -d "$(git log -1 --format='%cI' -- "$file")" "$file" 2>/dev/null || true
+              fi
+            done
+      - run:
           name: Deploy to staging
           command: |
             lftp -u "$FTP_USER","$FTP_PASS" "$FTP_HOST" -e "

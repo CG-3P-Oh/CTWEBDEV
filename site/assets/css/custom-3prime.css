@@ -306,3 +306,8 @@ html {
   position: relative;
   z-index: 2;
 }
+
+/* Hero heading margin override */
+.hero-3prime .mb-3 {
+  margin-bottom: 1rem !important;
+}

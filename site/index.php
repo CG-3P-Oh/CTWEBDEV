@@ -35,7 +35,7 @@
             <!-- Heading -->
             <h1 class="display-3 fw-bold text-white mb-3">
               CT Web Development
-              <span class="d-block fw-normal" style="margin-top: 0px; font-size: 70%;">by 3PRIME</span>
+              <span class="d-block fw-normal" style="margin-top: 0px; font-size: 40% !important;">by 3PRIME</span>
             </h1>
 
             <!-- Subheading -->
